@@ -1,0 +1,1629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PickMarket</title>
+    <link href="./lib/fontawesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="./style/style2.css" rel="stylesheet">
+    <link href="./style/responsive.css" rel="stylesheet">
+</head>
+
+<body>
+    <section class="header">
+        <div class="my-container">
+            <div class="header desktop">
+                <div class="logo">
+                    <img src="./Assets/Greentea_Logo-White.png" title="Nếu bạn click vào đây bạn sẽ về trang chủ.">
+                </div>
+                <div class="signin-button">
+                    <button type="button" class="btn"><strong>Đăng ký</strong></button>
+                </div>
+                <div class="login-button">
+                    <button type="button" class="btn btn-light"><strong>Đăng nhập</strong></button>
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="basic-addon2"><i class="fas fa-search"></i></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Tìm kiếm" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="menu mobile" onclick="openMobileMenu()">
+                <div class="menu-bar">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="search">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+            <div class="logo">
+                <img src="./Assets/Greentea_Logo-White.png" title="Nếu bạn click vào đây bạn sẽ về trang chủ.">
+            </div>
+        </div>
+
+        <div class="sub-menu mobile">
+            <ul>
+                <li>Popular</li>
+                <li>Vectors</li>
+                <li>Photos</li>
+                <li>Psds</li>
+                <li>Contact</li>
+                <li>About</li>
+            </ul>
+        </div>
+
+
+    </section>
+    <!--slider-->
+    <section class="slider">
+        <div class="container">
+            <div class="copy">
+                <h1>Tìm nguồn cảm hứng của bạn.</h1>
+                <h3>Hãy tham gia cộng đồng Flickr, ngôi nhà của hàng chục tỷ bức ảnh và 2 triệu nhóm.</h3>
+                <button type="button" class="btn btn-light">Bắt đầu miễn phí</button>
+            </div>
+        </div>
+
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="./Assets/Images/Jessica_Drossin_Balance.jpg" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Balance</h3>
+                        <p>bởi Jessica Drossin</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./Assets/Images/Claire Gentile_USSJohnFKennedy.jpg" alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>USSJohnFKennedy</h3>
+                        <p>Bởi Claire Gentile</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./Assets/Images/Ann_and_Chris_Short_Eared_Owl.jpg" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Short Eared Owl</h3>
+                        <p>bởi Ann and Chris</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./Assets/Images/Ramon_Covelo_Sakrisoy Dreams.jpg" alt="Fourth slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Sakrisoy Dreams</h3>
+                        <p>bởi Ramon Covelo</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./Assets/Images/Guillaume_Kaufmann_Wintery_Wave_Tete_de_Ran_Switzerland.jpg" alt="Fifth slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Wintery Wave Tete de Ran Switzerland</h3>
+                        <p>bởi Guillaume Kaufmann</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./Assets/Images/Kristina Makeeva_Untitled.jpg" alt="Sixth slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Untitled</h3>
+                        <p>bởi Kristina Makeeva</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./Assets/Images/Martin_Heigan_Sharpless_308_Dolphin_Nebula.jpg" alt="Sixth slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Sharpless 308 Dolphin Nebula</h3>
+                        <p>bởi Martin Heigan</p>
+                    </div>
+                </div>
+            </div>
+            <!--<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>-->
+        </div>
+    </section>
+
+    <section class="menu">
+        <div class="my-container">
+            <div class="btn-group">
+                <div class="row">
+                    <button type="button" class="btn btn-light">Popular</button>
+                    <button type="button" class="btn btn-light">Vectors</button>
+                    <button type="button" class="btn btn-light">Photos</button>
+                    <button type="button" class="btn btn-light">Psds</button>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">
+                            Me
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Contact</a>
+                            <a class="dropdown-item" href="#">About</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="showcase">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="responsive">
+                    <div class="gallery">
+                        <!-- 1 -->
+                        <figure>
+                            <div class="img">
+                                <img class="img-main" src="https://img.freepik.com/free-vector/face-mask-required-sign-collection_23-2148589681.jpg?size=664&ext=jpg&ga=GA1.2.582417152.1565102242" alt="" width="600" height="400">
+                                <figcaption>
+                                    <div class="text">
+                                        <p class="title">Face mask required - sign collection</p>
+                                        <span class="avatar">
+                                            <img class="loaded" src="https://avatar.cdnpk.net/23.jpg" alt="freepik">
+                                        </span>
+                                        <span class="name">Freepik</span>
+                                        <div class="status">
+                                            <i class="fas fa-download">2k</i>
+                                            <i class="far fa-heart">125</i>
+                                        </div>
+                                        <!-- <button class=""></button>
+                                        <button class=""></button>
+                                        <button class=""></button> -->
+                                    </div>
+                                </figcaption>
+                            </div>
+
+                        </figure>
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="gallery">
+                        <!-- 2 -->
+                        <figure>
+                            <div class="img">
+                                <img class="img-main" src="https://img.freepik.com/free-photo/tv-cabinet-modern-living-room-with-lamp-table-flower-plant-yellow-wall-background_41470-1515.jpg?size=664&ext=jpg&ga=GA1.2.582417152.1565102242" alt="" width="600" height="400">
+                                <figcaption>
+                                    <div class="text">
+                                        <p class="title">Tv cabinet modern living room with lamp table flower plant yellow wall background</p>
+                                        <span class="avatar">
+                                            <img class="loaded" src="https://avatar.cdnpk.net/23.jpg" alt="freepik">
+                                        </span>
+                                        <span class="name">Freepik</span>
+                                        <div class="status">
+                                            <i class="fas fa-download">2k</i>
+                                            <i class="far fa-heart">125</i>
+                                        </div>
+                                        <!-- <button class=""></button>
+                                            <button class=""></button>
+                                            <button class=""></button> -->
+                                    </div>
+                                </figcaption>
+                            </div>
+                        </figure>
+
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <!-- 3 -->
+                        <figure>
+                            <div class="img">
+                                <img class="img-main" src="https://img.freepik.com/free-psd/hardcover-book-mockup_77323-262.jpg?size=664&ext=jpg&ga=GA1.2.582417152.1565102242" alt="" width="600" height="400">
+                                <figcaption>
+                                    <div class="text">
+                                        <p class="title">Hardcover book mockup</p>
+                                        <span class="avatar">
+                                            <img class="loaded" src="https://avatar.cdnpk.net/23.jpg" alt="freepik">
+                                        </span>
+                                        <span class="name">Freepik</span>
+                                        <div class="status">
+                                            <i class="fas fa-download">2k</i>
+                                            <i class="far fa-heart">125</i>
+                                        </div>
+                                        <!-- <button class=""></button>
+                                                <button class=""></button>
+                                                <button class=""></button> -->
+                                    </div>
+                                </figcaption>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <!-- 4 -->
+                        <figure>
+                            <div class="img">
+                                <img class="img-main" src="https://img.freepik.com/free-psd/modern-fabric-face-mask-mockup-three-views_1361-2524.jpg?size=664&ext=jpg&ga=GA1.2.582417152.1565102242" alt="" width="600" height="400">
+                                <figcaption>
+                                    <div class="text">
+                                        <p class="title">Modern fabric face mask mockup in three views</p>
+                                        <span class="avatar">
+                                            <img class="loaded" src="https://avatar.freepik.com/474714.jpg"
+                                                alt="freepik">
+                                        </span>
+                                        <span class="name">BiZkettE1</span>
+                                        <div class="status">
+                                            <i class="fas fa-download">2k</i>
+                                            <i class="far fa-heart">125</i>
+                                        </div>
+                                        <!-- <button class=""></button>
+                                                <button class=""></button>
+                                                <button class=""></button> -->
+                                    </div>
+                                </figcaption>
+                            </div>
+
+                        </figure>
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="gallery">
+                        <figure>
+                            <!-- 5 -->
+                            <div class="img">
+                                <img class="img-main" src="https://img.freepik.com/free-psd/3d-logo-mockup_145275-141.jpg?size=664&ext=jpg&ga=GA1.2.582417152.1565102242" alt="" width="600" height="400">
+                                <figcaption>
+                                    <div class="text">
+                                        <p class="title">3d logo mockup</p>
+                                        <span class="avatar">
+                                            <img class="loaded" src="https://avatar.freepik.com/16357804.jpg"
+                                                alt="freepik">
+                                        </span>
+                                        <span class="name">Freepik</span>
+                                        <div class="status">
+                                            <i class="fas fa-download">2k</i>
+                                            <i class="far fa-heart">125</i>
+                                        </div>
+                                        <!-- <button class=""></button>
+                                                <button class=""></button>
+                                                <button class=""></button> -->
+                                    </div>
+                                </figcaption>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="gallery">
+                        <!-- 6 -->
+                        <figure>
+                            <div class="img">
+                                <img class="img-main" src="https://img.freepik.com/free-vector/abstract-halftone-background_23-2148583453.jpg?size=664&ext=jpg&ga=GA1.2.582417152.1565102242" alt="" width="600" height="400">
+                                <figcaption>
+                                    <div class="text">
+                                        <p class="title">Abstract halftone background</p>
+                                        <span class="avatar">
+                                            <img class="loaded" src="https://avatar.cdnpk.net/23.jpg" alt="freepik">
+                                        </span>
+                                        <span class="name">Freepik</span>
+                                        <div class="status">
+                                            <i class="fas fa-download">2k</i>
+                                            <i class="far fa-heart">125</i>
+                                        </div>
+                                        <!-- <button class=""></button>
+                                                <button class=""></button>
+                                                <button class=""></button> -->
+                                    </div>
+                                </figcaption>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="gallery">
+                        <figure>
+                            <!-- 7 -->
+                            <div class="img">
+                                <img class="img-main" src="https://img.freepik.com/free-psd/front-view-couple-posing-t-shirts_23-2148457379.jpg?size=664&ext=jpg&ga=GA1.2.582417152.1565102242" alt="" width="600" height="400">
+                                <figcaption>
+                                    <div class="text">
+                                        <p class="title">Front view couple posing T shirts</p>
+                                        <span class="avatar">
+                                            <img class="loaded" src="https://avatar.cdnpk.net/23.jpg" alt="freepik">
+                                        </span>
+                                        <span class="name">Freepik</span>
+                                        <div class="status">
+                                            <i class="fas fa-download">2k</i>
+                                            <i class="far fa-heart">125</i>
+                                        </div>
+                                        <!-- <button class=""></button>
+                                                <button class=""></button>
+                                                <button class=""></button> -->
+                                    </div>
+                                </figcaption>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="gallery">
+                        <figure>
+                            <!-- 8 -->
+                            <div class="img">
+                                <img class="img-main" src="https://img.freepik.com/free-psd/logo-mockup-3d-modern-wall_145275-122.jpg?size=664&ext=jpg&ga=GA1.2.582417152.1565102242" alt="" width="600" height="400">
+                                <figcaption>
+                                    <div class="text">
+                                        <p class="title">Front view couple posing T shirts</p>
+                                        <span class="avatar">
+                                            <img class="loaded" src="https://avatar.cdnpk.net/23.jpg" alt="freepik">
+                                        </span>
+                                        <span class="name">Freepik</span>
+                                        <div class="status">
+                                            <i class="fas fa-download">2k</i>
+                                            <i class="far fa-heart">125</i>
+                                        </div>
+                                        <!-- <button class=""></button>
+                                                <button class=""></button>
+                                                <button class=""></button> -->
+                                    </div>
+                                </figcaption>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="gallery">
+                        <figure>
+                            <!-- 9 -->
+                            <div class="img">
+                                <img class="img-main" src="https://img.freepik.com/free-psd/t-shirt-back-mockup_37789-259.jpg?size=664&ext=jpg&ga=GA1.2.582417152.1565102242" alt="" width="600" height="400">
+                                <figcaption>
+                                    <div class="text">
+                                        <p class="title">Front view couple posing T shirts</p>
+                                        <span class="avatar">
+                                            <img class="loaded" src="https://avatar.cdnpk.net/23.jpg" alt="freepik">
+                                        </span>
+                                        <span class="name">Freepik</span>
+                                        <div class="status">
+                                            <i class="fas fa-download">2k</i>
+                                            <i class="far fa-heart">125</i>
+                                        </div>
+                                        <!-- <button class=""></button>
+                                                <button class=""></button>
+                                                <button class=""></button> -->
+                                    </div>
+                                </figcaption>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="gallery">
+                        <figure>
+                            <!-- 10 -->
+                            <div class="img">
+                                <img class="img-main" src="https://img.freepik.com/free-vector/purple-powder-pastel-with-hand-drawn-flowers-background_23-2148588630.jpg?size=664&ext=jpg&ga=GA1.2.582417152.1565102242" alt="" width="600" height="400">
+                                <figcaption>
+                                    <div class="text">
+                                        <p class="title">purple powder pastel with hand drawn flowers background</p>
+                                        <span class="avatar">
+                                            <img class="loaded" src="https://avatar.cdnpk.net/23.jpg" alt="freepik">
+                                        </span>
+                                        <span class="name">Freepik</span>
+                                        <div class="status">
+                                            <i class="fas fa-download">2k</i>
+                                            <i class="far fa-heart">125</i>
+                                        </div>
+                                        <!-- <button class=""></button>
+                                                <button class=""></button>
+                                                <button class=""></button> -->
+                                    </div>
+                                </figcaption>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="gallery">
+                        <figure>
+                            <!-- 11 -->
+                            <div class="img">
+                                <img class="img-main" src="https://img.freepik.com/free-vector/elegant-soft-floral-wedding-invitation-card-template_21799-3237.jpg?size=664&ext=jpg&ga=GA1.2.582417152.1565102242" alt="" width="600" height="400">
+                                <figcaption>
+                                    <div class="text">
+                                        <p class="title">elegant soft floral wedding invitation card template</p>
+                                        <span class="avatar">
+                                            <img class="loaded" src="https://avatar.cdnpk.net/23.jpg" alt="freepik">
+                                        </span>
+                                        <span class="name">Freepik</span>
+                                        <div class="status">
+                                            <i class="fas fa-download">2k</i>
+                                            <i class="far fa-heart">125</i>
+                                        </div>
+                                        <!-- <button class=""></button>
+                                                <button class=""></button>
+                                                <button class=""></button> -->
+                                    </div>
+                                </figcaption>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="gallery">
+                        <figure>
+                            <!-- 12 -->
+                            <div class="img">
+                                <img class="img-main" src="https://img.freepik.com/free-vector/abstract-offline-template-twitch-banner_23-2148578182.jpg?size=664&ext=jpg&ga=GA1.2.582417152.1565102242" alt="" width="600" height="400">
+                                <figcaption>
+                                    <div class="text">
+                                        <p class="title">Elegant soft flora wedding invitation card template</p>
+                                        <span class="avatar">
+                                            <img class="loaded" src="https://avatar.cdnpk.net/23.jpg" alt="freepik">
+                                        </span>
+                                        <span class="name">Freepik</span>
+                                        <div class="status">
+                                            <i class="fas fa-download">2k</i>
+                                            <i class="far fa-heart">125</i>
+                                        </div>
+                                        <!-- <button class=""></button>
+                                                <button class=""></button>
+                                                <button class=""></button> -->
+                                    </div>
+                                </figcaption>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="gallery">
+                        <figure>
+                            <!-- 13 -->
+                            <div class="img">
+                                <img class="img-main" src="https://img.freepik.com/free-vector/tropical-leaves-background-zoom_52683-40995.jpg?size=664&ext=jpg&ga=GA1.2.582417152.1565102242" alt="" width="600" height="400">
+                                <figcaption>
+                                    <div class="text">
+                                        <p class="title">Tropical leaves background zoom</p>
+                                        <span class="avatar">
+                                            <img class="loaded" src="https://avatar.cdnpk.net/23.jpg" alt="freepik">
+                                        </span>
+                                        <span class="name">Freepik</span>
+                                        <div class="status">
+                                            <i class="fas fa-download">2k</i>
+                                            <i class="far fa-heart">125</i>
+                                        </div>
+                                        <!-- <button class=""></button>
+                                                <button class=""></button>
+                                                <button class=""></button> -->
+                                    </div>
+                                </figcaption>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="gallery">
+                        <figure>
+                            <!-- 14 -->
+                            <div class="img">
+                                <img class="img-main" src="https://img.freepik.com/free-vector/offline-twitch-banner-with-paper-cut-design-template_1361-2601.jpg?size=664&ext=jpg&ga=GA1.2.582417152.1565102242" alt="" width="600" height="400">
+                                <figcaption>
+                                    <div class="text">
+                                        <p class="title">Offline twitch banner with paper cut design template</p>
+                                        <span class="avatar">
+                                            <img class="loaded" src="https://avatar.freepik.com/474714.jpg"
+                                                alt="freepik">
+                                        </span>
+                                        <span class="name">Freepik</span>
+                                        <div class="status">
+                                            <i class="fas fa-download">2k</i>
+                                            <i class="far fa-heart">125</i>
+                                        </div>
+                                        <!-- <button class=""></button>
+                                                <button class=""></button>
+                                                <button class=""></button> -->
+                                    </div>
+                                </figcaption>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="gallery">
+                        <figure>
+                            <!-- 15 -->
+                            <div class="img">
+                                <img class="img-main" src="https://img.freepik.com/free-photo/high-angle-farmland-countryside_23-2148579681.jpg?size=664&ext=jpg&ga=GA1.2.582417152.1565102242" alt="" width="600" height="400">
+                                <figcaption>
+                                    <div class="text">
+                                        <p class="title">High angle farmland countryside</p>
+                                        <span class="avatar">
+                                            <img class="loaded" src="https://avatar.cdnpk.net/23.jpg" alt="freepik">
+                                        </span>
+                                        <span class="name">Freepik</span>
+                                        <div class="status">
+                                            <i class="fas fa-download">2k</i>
+                                            <i class="far fa-heart">125</i>
+                                        </div>
+                                        <!-- <button class=""></button>
+                                                <button class=""></button>
+                                                <button class=""></button> -->
+                                    </div>
+                                </figcaption>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="gallery">
+                        <figure>
+                            <!-- 16 -->
+                            <div class="img">
+                                <img class="img-main" src="https://img.freepik.com/free-psd/elegant-dark-copper-business-card-psd-mockup_1361-2552.jpg?size=664&ext=jpg&ga=GA1.2.582417152.1565102242" alt="" width="600" height="400">
+                                <figcaption>
+                                    <div class="text">
+                                        <p class="title">Elegant dark copper business card psd mockup</p>
+                                        <span class="avatar">
+                                            <img class="loaded" src="https://avatar.cdnpk.net/23.jpg" alt="freepik">
+                                        </span>
+                                        <span class="name">Freepik</span>
+                                        <div class="status">
+                                            <i class="fas fa-download">2k</i>
+                                            <i class="far fa-heart">125</i>
+                                        </div>
+                                        <!-- <button class=""></button>
+                                                <button class=""></button>
+                                                <button class=""></button> -->
+                                    </div>
+                                </figcaption>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="gallery">
+                        <figure>
+                            <!-- 17 -->
+                            <div class="img">
+                                <img class="img-main" src="https://img.freepik.com/free-psd/set-two-adhesive-stickers-mockup_58466-10845.jpg?size=664&ext=jpg&ga=GA1.2.582417152.1565102242" alt="" width="600" height="400">
+                                <figcaption>
+                                    <div class="text">
+                                        <p class="title">Set two adhesive stickers mockup</p>
+                                        <span class="avatar">
+                                            <img class="loaded" src="https://avatar.cdnpk.net/23.jpg" alt="freepik">
+                                        </span>
+                                        <span class="name">Freepik</span>
+                                        <div class="status">
+                                            <i class="fas fa-download">2k</i>
+                                            <i class="far fa-heart">125</i>
+                                        </div>
+                                        <!-- <button class=""></button>
+                                                <button class=""></button>
+                                                <button class=""></button> -->
+                                    </div>
+                                </figcaption>
+                            </div>
+
+                        </figure>
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="gallery">
+                        <figure>
+                            <!-- 18 -->
+                            <div class="img">
+                                <img class="img-main" src="https://img.freepik.com/free-psd/blue-shirt-mockup_181945-623.jpg?size=664&ext=jpg&ga=GA1.2.582417152.1565102242" alt="" width="600" height="400">
+                                <figcaption>
+                                    <div class="text">
+                                        <p class="title">Blue shirt mockup</p>
+                                        <span class="avatar">
+                                            <img class="loaded" src="https://avatar.cdnpk.net/23.jpg" alt="freepik">
+                                        </span>
+                                        <span class="name">Freepik</span>
+                                        <div class="status">
+                                            <i class="fas fa-download">2k</i>
+                                            <i class="far fa-heart">125</i>
+                                        </div>
+                                        <!-- <button class=""></button>
+                                                <button class=""></button>
+                                                <button class=""></button> -->
+                                    </div>
+                                </figcaption>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="gallery">
+                        <figure>
+                            <!-- 19 -->
+                            <div class="img">
+                                <img class="img-main" src="https://img.freepik.com/free-photo/flat-lay-bowls-with-powder_23-2148583721.jpg?size=664&ext=jpg&ga=GA1.2.582417152.1565102242" alt="" width="600" height="400">
+                                <figcaption>
+                                    <div class="text">
+                                        <p class="title">Flat lay bowls with powder</p>
+                                        <span class="avatar">
+                                            <img class="loaded" src="https://avatar.cdnpk.net/23.jpg" alt="freepik">
+                                        </span>
+                                        <span class="name">Freepik</span>
+                                        <div class="status">
+                                            <i class="fas fa-download">1k</i>
+                                            <i class="far fa-heart">125</i>
+                                        </div>
+                                        <!-- <button class=""></button>
+                                                <button class=""></button>
+                                                <button class=""></button> -->
+                                    </div>
+                                </figcaption>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="gallery">
+                        <figure>
+                            <!-- 20 -->
+                            <div class="img">
+                                <img class="img-main" src="https://img.freepik.com/free-vector/flat-design-birthday-background_52683-41406.jpg?size=664&ext=jpg&ga=GA1.2.582417152.1565102242" alt="" width="600" height="400">
+                                <figcaption>
+                                    <div class="text">
+                                        <p class="title">Flat design birthday background</p>
+                                        <span class="avatar">
+                                            <img class="loaded" src="https://avatar.cdnpk.net/7740957.jpg"
+                                                alt="freepik">
+                                        </span>
+                                        <span class="name">pikisuperstar</span>
+                                        <div class="status">
+                                            <i class="fas fa-download">2k</i>
+                                            <i class="far fa-heart">125</i>
+                                        </div>
+                                        <!-- <button class=""></button>
+                                                <button class=""></button>
+                                                <button class=""></button> -->
+                                    </div>
+                                </figcaption>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="gallery">
+                        <figure>
+                            <!-- 21 -->
+                            <div class="img">
+                                <img class="img-main" src="https://img.freepik.com/free-vector/did-you-know-with-megaphone-text-space_1017-25697.jpg?size=338&ext=jpg&ga=GA1.2.582417152.1565102242" alt="" width="600" height="400">
+                                <figcaption>
+                                    <div class="text">
+                                        <p class="title">Did you know with megaphone text space</p>
+                                        <span class="avatar">
+                                            <img class="loaded" src="https://avatar.cdnpk.net/23.jpg" alt="freepik">
+                                        </span>
+                                        <span class="name">Freepik</span>
+                                        <div class="status">
+                                            <i class="fas fa-download">2k</i>
+                                            <i class="far fa-heart">125</i>
+                                        </div>
+                                        <!-- <button class=""></button>
+                                                <button class=""></button>
+                                                <button class=""></button> -->
+                                    </div>
+                                </figcaption>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="gallery">
+                        <figure>
+                            <!-- 22 -->
+                            <div class="img">
+                                <img class="img-main" src="https://img.freepik.com/free-vector/offline-twitch-banner-concept_23-2148588101.jpg?size=664&ext=jpg&ga=GA1.2.582417152.1565102242" alt="" width="600" height="400">
+                                <figcaption>
+                                    <div class="text">
+                                        <p class="title">Offline twitch banner concept</p>
+                                        <span class="avatar">
+                                            <img class="loaded" src="https://avatar.cdnpk.net/23.jpg" alt="freepik">
+                                        </span>
+                                        <span class="name">BiZkettE1</span>
+                                        <div class="status">
+                                            <i class="fas fa-download">2k</i>
+                                            <i class="far fa-heart">125</i>
+                                        </div>
+                                        <!-- <button class=""></button>
+                                                <button class=""></button>
+                                                <button class=""></button> -->
+                                    </div>
+                                </figcaption>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="gallery">
+                        <figure>
+                            <!-- 23 -->
+                            <div class="img">
+                                <img class="img-main" src="https://img.freepik.com/free-photo/close-up-man-holding-basket-with-vegetables_23-2148579691.jpg?size=664&ext=jpg&ga=GA1.2.582417152.1565102242" alt="" width="600" height="400">
+                                <figcaption>
+                                    <div class="text">
+                                        <p class="title">Close up man holding basket with vegetables</p>
+                                        <span class="avatar">
+                                            <img class="loaded" src="https://avatar.cdnpk.net/23.jpg" alt="freepik">
+                                        </span>
+                                        <span class="name">Freepik</span>
+                                        <div class="status">
+                                            <i class="fas fa-download">2k</i>
+                                            <i class="far fa-heart">125</i>
+                                        </div>
+                                        <!-- <button class=""></button>
+                                                <button class=""></button>
+                                                <button class=""></button> -->
+                                    </div>
+                                </figcaption>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="gallery">
+                        <figure>
+                            <!-- 24 -->
+                            <div class="img">
+                                <img class="img-main" src="https://img.freepik.com/free-photo/side-view-delivery-man-wearing-superhero-cape_23-2148579167.jpg?size=664&ext=jpg&ga=GA1.2.582417152.1565102242" alt="" width="600" height="400">
+                                <figcaption>
+                                    <div class="text">
+                                        <p class="title">side view delivery man wearing superhero cape</p>
+                                        <span class="avatar">
+                                            <img class="loaded" src="https://avatar.cdnpk.net/23.jpg" alt="freepik">
+                                        </span>
+                                        <span class="name">Freepik</span>
+                                        <div class="status">
+                                            <i class="fas fa-download">2k</i>
+                                            <i class="far fa-heart">125</i>
+                                        </div>
+                                        <!-- <button class=""></button>
+                                                <button class=""></button>
+                                                <button class=""></button> -->
+                                    </div>
+                                </figcaption>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="gallery">
+                        <figure>
+                            <!-- 25 -->
+                            <div class="img">
+                                <img class="img-main" src="https://img.freepik.com/free-photo/stylish-teenager-happy-be-back-university_23-2148586576.jpg?size=664&ext=jpg&ga=GA1.2.582417152.1565102242" alt="" width="600" height="400">
+                                <figcaption>
+                                    <div class="text">
+                                        <p class="title">Stylish teenager happy be back university</p>
+                                        <span class="avatar">
+                                            <img class="loaded" src="https://avatar.cdnpk.net/23.jpg" alt="freepik">
+                                        </span>
+                                        <span class="name">Freepik</span>
+                                        <div class="status">
+                                            <i class="fas fa-download">2k</i>
+                                            <i class="far fa-heart">125</i>
+                                        </div>
+                                        <!-- <button class=""></button>
+                                                <button class=""></button>
+                                                <button class=""></button> -->
+                                    </div>
+                                </figcaption>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="gallery">
+                        <figure>
+                            <!-- 26 -->
+                            <div class="img">
+                                <img class="img-main" src="https://img.freepik.com/free-photo/interior-poster-mock-up-with-plant-pot-flower-room-with-white-wall_41470-1513.jpg?size=664&ext=jpg&ga=GA1.2.582417152.1565102242" alt="" width="600" height="400">
+                                <figcaption>
+                                    <div class="text">
+                                        <p class="title">interior poster mock up with plant pot flower room with white wall
+                                        </p>
+                                        <span class="avatar">
+                                            <img class="loaded" src="https://avatar.cdnpk.net/23.jpg" alt="freepik">
+                                        </span>
+                                        <span class="name">Freepik</span>
+                                        <div class="status">
+                                            <i class="fas fa-download">2k</i>
+                                            <i class="far fa-heart">125</i>
+                                        </div>
+                                        <!-- <button class=""></button>
+                                                <button class=""></button>
+                                                <button class=""></button> -->
+                                    </div>
+                                </figcaption>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="gallery">
+                        <figure>
+                            <!-- 27 -->
+                            <div class="img">
+                                <img class="img-main" src="https://img.freepik.com/free-psd/logo-mockup-window-sign-luxury-store_145275-140.jpg?size=664&ext=jpg&ga=GA1.2.582417152.1565102242" alt="" width="600" height="400">
+                                <figcaption>
+                                    <div class="text">
+                                        <p class="title">Logo mockup window sign luxury store</p>
+                                        <span class="avatar">
+                                            <img class="loaded" src="https://avatar.cdnpk.net/23.jpg" alt="freepik">
+                                        </span>
+                                        <span class="name">Freepik</span>
+                                        <div class="status">
+                                            <i class="fas fa-download">2k</i>
+                                            <i class="far fa-heart">125</i>
+                                        </div>
+                                        <!-- <button class=""></button>
+                                                <button class=""></button>
+                                                <button class=""></button> -->
+                                    </div>
+                                </figcaption>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="gallery">
+                        <figure>
+                            <!-- 28 -->
+                            <div class="img">
+                                <img class="img-main" src="https://img.freepik.com/free-psd/logo-mockup-close-up-white-paper_145275-125.jpg?size=664&ext=jpg&ga=GA1.2.582417152.1565102242" alt="" width="600" height="400">
+                                <figcaption>
+                                    <div class="text">
+                                        <p class="title">Logo mockup close up white paper</p>
+                                        <span class="avatar">
+                                            <img class="loaded" src="https://avatar.freepik.com/16357804.jpg"
+                                                alt="freepik">
+                                        </span>
+                                        <span class="name">asylab</span>
+                                        <div class="status">
+                                            <i class="fas fa-download">2k</i>
+                                            <i class="far fa-heart">125</i>
+                                        </div>
+                                        <!-- <button class=""></button>
+                                                <button class=""></button>
+                                                <button class=""></button> -->
+                                    </div>
+                                </figcaption>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="gallery">
+                        <figure>
+                            <!-- 29 -->
+                            <div class="img">
+                                <img class="img-main" src="https://img.freepik.com/free-psd/realistic-3d-logo-wood-mockup-office-wall-texture_245129-30.jpg?size=664&ext=jpg&ga=GA1.2.582417152.1565102242" alt="" width="600" height="400">
+                                <figcaption>
+                                    <div class="text">
+                                        <p class="title">Realistic 3d logo wood mockup office wall texture</p>
+                                        <span class="avatar">
+                                            <img class="loaded" src="https://avatar.freepik.com/21435638.jpg"
+                                                alt="freepik">
+                                        </span>
+                                        <span class="name">hilyamoon</span>
+                                        <div class="status">
+                                            <i class="fas fa-download">2k</i>
+                                            <i class="far fa-heart">125</i>
+                                        </div>
+                                        <!-- <button class=""></button>
+                                                <button class=""></button>
+                                                <button class=""></button> -->
+                                    </div>
+                                </figcaption>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="gallery">
+                        <figure>
+                            <!-- 30 -->
+                            <div class="img">
+                                <img class="img-main" src="https://img.freepik.com/free-vector/online-cv-template_52683-40723.jpg?size=338&ext=jpg&ga=GA1.2.582417152.1565102242" alt="" width="600" height="400">
+                                <figcaption>
+                                    <div class="text">
+                                        <p class="title">Online cv template</p>
+                                        <span class="avatar">
+                                            <img class="loaded" src="https://avatar.cdnpk.net/23.jpg" alt="freepik">
+                                        </span>
+                                        <span class="name">Freepik</span>
+                                        <div class="status">
+                                            <i class="fas fa-download">2k</i>
+                                            <i class="far fa-heart">125</i>
+                                        </div>
+                                        <!-- <button class=""></button>
+                                                <button class=""></button>
+                                                <button class=""></button> -->
+                                    </div>
+                                </figcaption>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="gallery">
+                        <figure>
+                            <!-- 31 -->
+                            <div class="img">
+                                <img class="img-main" src="https://img.freepik.com/free-photo/mockup-wall-children-s-room-wall-dark-blue-colors-background_41470-1518.jpg?size=664&ext=jpg&ga=GA1.2.582417152.1565102242" alt="" width="600" height="400">
+                                <figcaption>
+                                    <div class="text">
+                                        <p class="title">Mockup wall children room wall dark blue colors background</p>
+                                        <span class="avatar">
+                                            <img class="loaded" src="https://avatar.cdnpk.net/23.jpg" alt="freepik">
+                                        </span>
+                                        <span class="name">Freepik</span>
+                                        <div class="status">
+                                            <i class="fas fa-download">2k</i>
+                                            <i class="far fa-heart">125</i>
+                                        </div>
+                                        <!-- <button class=""></button>
+                                                <button class=""></button>
+                                                <button class=""></button> -->
+                                    </div>
+                                </figcaption>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="gallery">
+                        <figure>
+                            <!-- 32 -->
+                            <div class="img">
+                                <img class="img-main" src="https://img.freepik.com/free-photo/banner-with-surprised-children-peeking-edge_155003-10104.jpg?size=664&ext=jpg&ga=GA1.2.582417152.1565102242" alt="" width="600" height="400">
+                                <figcaption>
+                                    <div class="text">
+                                        <p class="title">Banner with surprised children peeking edge</p>
+                                        <span class="avatar">
+                                            <img class="loaded" src="https://avatar.cdnpk.net/23.jpg" alt="freepik">
+                                        </span>
+                                        <span class="name">Freepik</span>
+                                        <div class="status">
+                                            <i class="fas fa-download">2k</i>
+                                            <i class="far fa-heart">125</i>
+                                        </div>
+                                        <!-- <button class=""></button>
+                                                <button class=""></button>
+                                                <button class=""></button> -->
+                                    </div>
+                                </figcaption>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Collection-swiper-->
+    <section class="collection-swiper">
+        <div class="discover-header">
+            <h2>Discover Freepik Collections</h2>
+        </div>
+
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="grid-container">
+                            <div class="grid-item item1">
+                                <figure>
+                                    <img src="https://img.freepik.com/free-photo/background-blue-stucco-coated-painted-exterior-rough-cast-cement-concrete-wall-texture_92056-1273.jpg?size=664&ext=jpg" alt="">
+                                </figure>
+                            </div>
+                            <div class="grid-item item2">
+                                <figure>
+                                    <img src="https://img.freepik.com/free-photo/close-up-old-wood-planks_158595-5676.jpg?size=664&ext=jpg" alt="">
+                                </figure>
+                            </div>
+                            <div class="grid-item item3">
+                                <figure>
+                                    <img src="https://img.freepik.com/free-photo/blue-painted-rough-wall-surface_23-2148413340.jpg?size=664&ext=jpg" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Rustic Textures</h4>
+                            <p class="card-text">80 resourses</p>
+                        </div>
+                    </div>
+                    <br>
+
+
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="grid-container">
+                            <div class="grid-item item1">
+                                <figure>
+                                    <img src="https://img.freepik.com/free-vector/colorful-geometric-shape-mosaic-background_52683-16064.jpg?size=664&ext=jpg" alt="">
+                                </figure>
+                            </div>
+                            <div class="grid-item item2">
+                                <figure>
+                                    <img src="https://img.freepik.com/free-vector/golden-chinese-pattern-collection_61090-156.jpg?size=664&ext=jpg" alt="">
+                                </figure>
+                            </div>
+                            <div class="grid-item item3">
+                                <figure>
+                                    <img src="https://img.freepik.com/free-vector/golden-chinese-seamless-pattern-collection_61090-131.jpg?size=664&ext=jpg" alt="">
+
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Geometric Patterns</h4>
+                            <p class="card-text">120 resourses</p>
+                        </div>
+                    </div>
+                    <br>
+
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="grid-container">
+                            <div class="grid-item item1">
+                                <figure>
+                                    <img src="https://img.freepik.com/free-psd/a4-trifold-brochure-mockup_77847-26.jpg?size=664&ext=jpg" alt="">
+                                </figure>
+                            </div>
+                            <div class="grid-item item2">
+                                <figure>
+                                    <img src="https://img.freepik.com/free-psd/cosmetic-moisturizing-product-package-with-oil-liquid-splash_36845-205.jpg?size=338&ext=jpg" alt="">
+                                </figure>
+                            </div>
+                            <div class="grid-item item3">
+                                <figure>
+                                    <img src="https://img.freepik.com/free-psd/summer-text-effect-generator_103388-37.jpg?size=664&ext=jpg" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">TOP 2019 Psd</h4>
+                            <p class="card-text">120 resourses</p>
+                        </div>
+                    </div>
+                    <br>
+
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="grid-container">
+                            <div class="grid-item item1">
+                                <figure>
+                                    <img src="https://img.freepik.com/free-vector/floral-elements-collection-watercolor-style_23-2147865217.jpg?size=338&ext=jpg" alt="">
+                                </figure>
+                            </div>
+                            <div class="grid-item item2">
+                                <figure>
+                                    <img src="https://img.freepik.com/free-vector/watercolor-flowers-collection_23-2147632929.jpg?size=338&ext=jpg" alt="">
+                                </figure>
+                            </div>
+                            <div class="grid-item item3">
+                                <figure>
+                                    <img src="https://img.freepik.com/free-vector/set-colorful-flowers-watecolor-style_23-2147798523.jpg?size=338&ext=jpg" alt="">
+
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Flower collection</h4>
+                            <p class="card-text">66 resourses</p>
+                        </div>
+                    </div>
+                    <br>
+
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="grid-container">
+                            <div class="grid-item item1">
+                                <figure>
+                                    <img src="https://img.freepik.com/free-vector/abstract-colorful-sale-instagram-post-set_52683-26868.jpg?size=664&ext=jpg" alt="">
+                                </figure>
+                            </div>
+                            <div class="grid-item item2">
+                                <figure>
+                                    <img src="https://img.freepik.com/free-vector/colorful-abstract-sale-instagram-stories-with-photo_52683-25546.jpg?size=664&ext=jpg" alt="">
+                                </figure>
+                            </div>
+                            <div class="grid-item item3">
+                                <figure>
+                                    <img src="https://img.freepik.com/free-vector/sales-instagram-post-collection_52683-27965.jpg?size=664&ext=jpg" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Social Media Advertisment</h4>
+                            <p class="card-text">160 resourses</p>
+                        </div>
+                    </div>
+                    <br>
+
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="grid-container">
+                            <div class="grid-item item1">
+                                <figure>
+                                    <img src="https://img.freepik.com/free-vector/dynamic-3d-geometric-landing-page_23-2148283941.jpg?size=664&ext=jpg" alt="">
+                                </figure>
+                            </div>
+                            <div class="grid-item item2">
+                                <figure>
+                                    <img src="https://img.freepik.com/free-vector/landing-page-with-3d-geometric-pieces_52683-23510.jpg?size=664&ext=jpg" alt="">
+                                </figure>
+                            </div>
+                            <div class="grid-item item3">
+                                <figure>
+                                    <img src="https://img.freepik.com/free-vector/geometric-landing-page-with-gradient_52683-23073.jpg?size=664&ext=jpg" alt="">
+
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Gradient Landing Page</h4>
+                            <p class="card-text">80 resourses</p>
+                        </div>
+                    </div>
+                    <br>
+
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="grid-container">
+                            <div class="grid-item item1">
+                                <figure>
+                                    <img src="https://img.freepik.com/free-vector/coronavirus-map-infections_23-2148491041.jpg?size=664&ext=jpg" alt="">
+
+                                </figure>
+                            </div>
+                            <div class="grid-item item2">
+                                <figure>
+                                    <img src="https://img.freepik.com/free-vector/coronavirus-infographic_23-2148490779.jpg?size=664&ext=jpg" alt="">
+                                </figure>
+                            </div>
+                            <div class="grid-item item3">
+                                <figure>
+                                    <img src="https://img.freepik.com/free-vector/coronavirus-map_23-2148491042.jpg?size=664&ext=jpg" alt="">
+
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Coronavirus Infographic</h4>
+                            <p class="card-text">110 resourses</p>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="grid-container">
+                            <div class="grid-item item1">
+                                <figure>
+                                    <img src="https://img.freepik.com/free-vector/cute-design-website-template_53876-89264.jpg?size=338&ext=jpg" alt="">
+                                </figure>
+                            </div>
+                            <div class="grid-item item2">
+                                <figure>
+
+                                    <img src="https://img.freepik.com/free-vector/promotion-square-banner-collectio_52683-6125.jpg?size=664&ext=jpg" alt="">
+
+                                </figure>
+                            </div>
+                            <div class="grid-item item3">
+                                <figure>
+
+                                    <img src="https://img.freepik.com/free-vector/flat-sale-banner-with-realistic-objects_52683-9274.jpg?size=338&ext=jpg" alt="">
+
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Coronavirus Infographic</h4>
+                            <p class="card-text">110 resourses</p>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="grid-container">
+                            <div class="grid-item item1">
+                                <figure>
+                                    <img src="https://img.freepik.com/free-photo/young-handsome-man-with-beard-isolated-purple-wall-listening-music-singing_1368-113269.jpg?size=664&ext=jpg" alt="">
+                                </figure>
+                            </div>
+                            <div class="grid-item item2">
+                                <figure>
+
+                                    <img src="https://img.freepik.com/free-photo/young-caucasian-woman_1368-109929.jpg?size=664&ext=jpg" alt="">
+
+                                </figure>
+                            </div>
+                            <div class="grid-item item3">
+                                <figure>
+
+                                    <img src="https://img.freepik.com/free-photo/monitor-keyboard-work-computer-desk-3d-render-illustration-pastel-color_100878-77.jpg?size=664&ext=jpg" alt="">
+
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Pastel Color</h4>
+                            <p class="card-text">80 resourses</p>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="grid-container">
+                            <div class="grid-item item1">
+                                <figure>
+                                    <img src="https://img.freepik.com/free-vector/colorful-timeline-infographic-template-flat-style_52683-21752.jpg?size=664&ext=jpg" alt="">
+                                </figure>
+                            </div>
+                            <div class="grid-item item2">
+                                <figure>
+
+                                    <img src="https://img.freepik.com/free-vector/modern-step-infographic-with-icons_1361-1411.jpg?size=664&ext=jpg" alt="">
+
+                                </figure>
+                            </div>
+                            <div class="grid-item item3">
+                                <figure>
+
+                                    <img src="https://img.freepik.com/free-vector/circle-linked-with-business-elements-infographic-template-world-map_77986-516.jpg?size=664&ext=jpg" alt="">
+
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Infographic Elements</h4>
+                            <p class="card-text">112 resourses</p>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- Add Pagination -->
+        <!--<div class="swiper-pagination"></div>-->
+    </section>
+    <section class="popular-search">
+        <div class="container-fluid">
+            <h4>Popular Search</h4>
+            <ol class="row">
+                <li class="col-12 col-sm-6 col-md-4 col-xl-3">
+                    <a href="#"> Background</a>
+                </li>
+                <li class="col-12 col-sm-6 col-md-4 col-xl-3">
+                    <a href="#"> Logo</a>
+                </li>
+                <li class="col-12 col-sm-6 col-md-4 col-xl-3">
+                    <a href="#"> Banner</a>
+                </li>
+                <li class="col-12 col-sm-6 col-md-4 col-xl-3">
+                    <a href="#">Mockup</a>
+                </li>
+                <li class="col-12 col-sm-6 col-md-4 col-xl-3">
+                    <a href="#"> Business card</a>
+                </li>
+                <li class="col-12 col-sm-6 col-md-4 col-xl-3">
+                    <a href="#"> Flyer</a>
+                </li>
+                <li class="col-12 col-sm-6 col-md-4 col-xl-3">
+                    <a href="#">Abstract background</a>
+                </li>
+                <li class="col-12 col-sm-6 col-md-4 col-xl-3">
+                    <a href="#"> Flower</a>
+                </li>
+                <li class="col-12 col-sm-6 col-md-4 col-xl-3">
+                    <a href="#"> Poster</a>
+                </li>
+                <li class="col-12 col-sm-6 col-md-4 col-xl-3">
+                    <a href="#"> Infographic</a>
+                </li>
+                <li class="col-12 col-sm-6 col-md-4 col-xl-3">
+                    <a href="#"> Pattern</a>
+                </li>
+                <li class="col-12 col-sm-6 col-md-4 col-xl-3">
+                    <a href="#">Summer</a>
+                </li>
+                <li class="col-12 col-sm-6 col-md-4 col-xl-3">
+                    <a href="#">Frame</a>
+                </li>
+                <li class="col-12 col-sm-6 col-md-4 col-xl-3">
+                    <a href="#">Sale</a>
+                </li>
+                <li class="col-12 col-sm-6 col-md-4 col-xl-3">
+                    <a href="#"> Food</a>
+                </li>
+                <li class="col-12 col-sm-6 col-md-4 col-xl-3 seemore">
+                    <a href="#">See more</a>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <!--Blog overflow-hidden-->
+    <section class="blog overflow-hidden">
+        <div class="container-fluid">
+            <h4>Latest from the blog</h4>
+            <div class="swiper-container">
+
+                <div class="swiper-wrapper">
+                    <!--  <div class="row"> -->
+                    <!--  <div class="col-12 col-md-6 col-lg-4 col-xl-3"> -->
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <figure>
+                                <img src="http://api.thumbr.io/b5237b0b4071badb28344eb91594d1df/KhPZbWboUluRxv8PG87L/https%3A%2F%2Fwww.freepik.com/blog/app/uploads/2020/06/freebie-1280x1878.jpg/1200/thumb.jpg" alt="">
+                            </figure>
+                        </div>
+                        <br>
+                    </div>
+                    <!--  </div> -->
+                    <!--  <div class="col-12 col-md-6 col-lg-4 col-xl-3"> -->
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="http://api.thumbr.io/a550f046e5337938c1fc980e26cf0942/KhPZbWboUluRxv8PG87L/https%3A%2F%2Fwww.freepik.com/blog/app/uploads/2020/05/Blog-EN.png/1200/thumb.jpg" alt="">
+
+                            <div class="card-body">
+                                <a href="#" class="text-symbol">Freebies</a>
+                                <h2 class="text-state">
+                                    <a href="#">Premium Tropical Collection – Download for free in the Next 24
+                                        Hours!</a>
+                                </h2>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <p class="font-sm">
+                                            <a> Freepik</a> 2 weeks ago
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+
+                    <!-- </div> -->
+                    <!--   <div class="col-12 col-md-6 col-lg-4 col-xl-3"> -->
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="http://api.thumbr.io/ab3cc19b87b87e24eac4899a8ac85abd/KhPZbWboUluRxv8PG87L/https%3A%2F%2Fwww.freepik.com/blog/app/uploads/2020/06/Cover-2.png/1200/thumb.jpg" alt="">
+                            <div class="card-body">
+                                <a href="#" class="text-symbol">Contributer</a>
+                                <h2 class="text-state">
+                                    <a href="#">How to Add the Right Keywords to Your PSD Files</a>
+                                </h2>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <p class="font-sm">
+                                            <a> Freepik</a> 3 weeks ago
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                    <!--  </div> -->
+                    <!-- <div class="col-12 col-md-6 col-lg-4 col-xl-3"> -->
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="http://api.thumbr.io/753811f534147613874079425d07d130/KhPZbWboUluRxv8PG87L/https%3A%2F%2Fwww.freepik.com/blog/app/uploads/2020/06/Vectores-1280x1878-2-1.jpg/1200/thumb.jpg" alt="">
+
+                        </div>
+                        <br>
+                    </div>
+                    <!--  </div> -->
+                    <!--  </div> -->
+                </div>
+    </section>
+    <section class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-xl-3">
+                        <label>content</label>
+                        <ul class="footer-content">
+                            <li>
+                                <a href="#">New resources</a>
+                            </li>
+                            <li>
+                                <a href="#">The most popular content</a>
+                            </li>
+                            <li>
+                                <a href="#">Search trends</a>
+                            </li>
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-xl-3">
+                        <label>information</label>
+                        <ul class="footer-content">
+                            <li>
+                                <a href="#">Plans & pricing</a>
+                            </li>
+                            <li>
+                                <a href="#">Affiliate</a>
+                            </li>
+                            <li>
+                                <a href="#">Jobs</a>
+                            </li>
+                            <li>
+                                <a href="#">Become a contributor</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-xl-3">
+                        <div class="row-sm">
+                            <div class="col-sm-12">
+                                <label>legal</label>
+                                <ul class="footer-content">
+                                    <li>
+                                        <a href="#">Terms & conditions</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">License Agreement</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Privacy policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Copyright information</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Cookies policy</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-sm-12">
+                                <label>help</label>
+                                <ul class="footer-content">
+                                    <li>
+                                        <a href="#">Support</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-xl-3">
+                        <div>
+                            <h6>Social media</h6>
+                        </div>
+                        <ul class="footer-content">
+                            <ul class="row-sm">
+                                <div class="row-social">
+                                    <!-- <i class="fab fa-facebook-f"></i> -->
+                                    <!-- <i class="fab fa-twitter-square"></i>
+                                    <i class="fab fa-pinterest-square"></i>
+                                    <i class="fab fa-instagram"></i>
+                                    <i class="fab fa-youtube"></i> -->
+                                    <img src="./Assets//Icon/facebook.svg">
+
+                                    <img src="./Assets/Icon/Twitter.svg">
+                                    <img src="./Assets/Icon/Printerest.svg">
+                                    <img src="./Assets/Icon/Instagram.svg">
+                                    <img src="./Assets//Icon/Youtube.svg">
+                                </div>
+                            </ul>
+                            <ul class="row-sm">
+                                <p>Get exclusive resources straight to your inbox</p>
+                                <button type="button" class="btn btn-primary">Sign up</button>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer-bot">
+            <div class="container">
+                <div class="row-sm">
+                    <div class="col-sm">
+                        <div class="row">
+                            <a class="image" href="https://www.freepikcompany.com">
+                                <img src="./Assets/Images/freepikcompany-footer.svg" alt="Freepik Company">
+                            </a>
+
+                            <p class="copyright-line">
+                                <span class="copyright">Copyright</span> "&nbsp;©&nbsp; 2010-2020 Freepik Company S.L."
+                                <span class="right-reserved"> All rights reserved.</span>
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <!--<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>-->
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            freeMode: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+            loop: false,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                },
+                // when window width is >= 630px
+                630: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                // when window width is >= 910px
+                910: {
+                    slidesPerView: 3,
+                    spaceBetween: 30
+                },
+                // when window width is >= 1260px
+                1260: {
+                    slidesPerView: 4,
+                    spaceBetween: 40
+                }
+            }
+        });
+
+        function openMobileMenu() {
+            $('.sub-menu').toggleClass('active');
+        }
+    </script>
+</body>
+
+</html>
